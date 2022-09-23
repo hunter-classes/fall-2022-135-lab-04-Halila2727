@@ -14,6 +14,7 @@
 #include "lower.h"
 #include "upper.h"
 #include "trapezoid.h"
+#include "checkerboard3x3.h"
 
 int main()
 {
@@ -111,6 +112,28 @@ int main()
     std::cout << result << "\n";
     
     std::cout << "\nEnd of Task F\n------------------\n\n";
+
+    std::cout << "\nTesting checkerboard3x3() function:\n\nWidth: 9\nHeight: 4\n";
+    result = checkerboard3x3(9, 4);
+    std::cout << result << "\n";
+    std::cout << "\n------------------\n";
+    std::cout << "\nWidth: 14\nHeight: 0\n";
+    result = checkerboard3x3(14, 0);
+    std::cout << result << "\n";
+    std::cout << "\n------------------\n";
+    std::cout << "\nWidth: 1\nHeight: 12\n";
+    result = checkerboard3x3(1, 12);
+    std::cout << result << "\n";
+    std::cout << "\n------------------\n";
+    std::cout << "\nWidth: 16\nHeight: 11\n";
+    result = checkerboard3x3(16, 11);
+    std::cout << result << "\n";
+    std::cout << "\n------------------\n";
+    std::cout << "\nWidth: 27\nHeight: 27\n";
+    result = checkerboard3x3(27, 27);
+    std::cout << result << "\n";
+    
+    std::cout << "\nEnd of Task G and LAB\n------------------\n\n";
     
     return 0;
 }
