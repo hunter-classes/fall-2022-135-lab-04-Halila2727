@@ -7,17 +7,19 @@
 */
 
 #include <iostream>
+#include <string>
 
-void box(int width, int height)
+std::string box(int width, int height)
 {
-    std::cout << "\n";
+    std::string s = "";
+    
     for(int i=0; i<height; i++)
     {
         for(int j=0; j<width; j++)
         {
-            std::cout << "*";
+            s += "*";
         }
-        std::cout << "\n";
+        s += "\n";
     }
-    std::cout << "\n";
+    return s;
 }
