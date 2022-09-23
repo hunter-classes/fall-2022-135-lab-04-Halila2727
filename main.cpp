@@ -12,6 +12,7 @@
 #include "checkerboard.h"
 #include "cross.h"
 #include "lower.h"
+#include "upper.h"
 
 int main()
 {
@@ -74,6 +75,19 @@ int main()
 
     std::cout << "\nEnd of Task D\n------------------\n\n";
 
+    std::cout << "\nTesting upper() function:\n\nSide length: 5\n";
+    result = upper(5);
+    std::cout << result << "\n";
+    std::cout << "\n------------------\n";
+    std::cout << "\nSide length: 0\n";
+    result = upper(0);
+    std::cout << result << "\n";
+    std::cout << "\n------------------\n";
+    std::cout << "\nSide length: 9\n";
+    result = upper(9);
+    std::cout << result << "\n";
+
+    std::cout << "\nEnd of Task E\n------------------\n\n";
     
     return 0;
 }
