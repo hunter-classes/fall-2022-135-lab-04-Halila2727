@@ -11,6 +11,7 @@
 #include "box.h"
 #include "checkerboard.h"
 #include "cross.h"
+#include "lower.h"
 
 int main()
 {
@@ -58,6 +59,20 @@ int main()
     std::cout << result << "\n";
 
     std::cout << "\nEnd of Task C\n------------------\n\n";
+
+    std::cout << "\nTesting lower() function:\n\nSide length: 6\n";
+    result = lower(6);
+    std::cout << result << "\n";
+    std::cout << "\n------------------\n";
+    std::cout << "\nSide length: 0\n";
+    result = lower(0);
+    std::cout << result << "\n";
+    std::cout << "\n------------------\n";
+    std::cout << "\nSide length: 13\n";
+    result = lower(13);
+    std::cout << result << "\n";
+
+    std::cout << "\nEnd of Task D\n------------------\n\n";
 
     
     return 0;
