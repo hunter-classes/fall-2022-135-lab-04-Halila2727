@@ -5,7 +5,8 @@
     Assignment: Lab 04, Task A
     This file serves as a means to let one file use the contents of another file.
 */
-#include <iostream>
 #pragma once
+#include <iostream>
+#include <string>
 
-void box(int width, int height);
+std::string box(int width, int height);
