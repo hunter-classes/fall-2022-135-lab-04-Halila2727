@@ -12,8 +12,5 @@ main.o: main.cpp box.h
 box.o: box.cpp box.h
 	$(CIXX) $(CIXXFLAGS) -c box.cpp box.h
 
-#//reverseorder.o: reverseorder.cpp reverseorder.h
-	$(CIXX) $(CIXXFLAGS) -c reverseorder.cpp reverseorder.h
-
 clean:
 	rm -f $(OBJECTS) box.h.gch
