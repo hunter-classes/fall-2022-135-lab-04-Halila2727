@@ -13,6 +13,7 @@
 #include "cross.h"
 #include "lower.h"
 #include "upper.h"
+#include "trapezoid.h"
 
 int main()
 {
@@ -88,6 +89,28 @@ int main()
     std::cout << result << "\n";
 
     std::cout << "\nEnd of Task E\n------------------\n\n";
+
+    std::cout << "\nTesting trapezoid() function:\n\nWidth: 9\nHeight: 4\n";
+    result = trapezoid(9, 4);
+    std::cout << result << "\n";
+    std::cout << "\n------------------\n";
+    std::cout << "\nWidth: 14\nHeight: 0\n";
+    result = trapezoid(14, 0);
+    std::cout << result << "\n";
+    std::cout << "\n------------------\n";
+    std::cout << "\nWidth: 1\nHeight: 12\n";
+    result = trapezoid(1, 12);
+    std::cout << result << "\n";
+    std::cout << "\n------------------\n";
+    std::cout << "\nWidth: 12\nHeight: 5\n";
+    result = trapezoid(12, 5);
+    std::cout << result << "\n";
+    std::cout << "\n------------------\n";
+    std::cout << "\nWidth: 12\nHeight: 7\n";
+    result = trapezoid(12, 7);
+    std::cout << result << "\n";
+    
+    std::cout << "\nEnd of Task F\n------------------\n\n";
     
     return 0;
 }
