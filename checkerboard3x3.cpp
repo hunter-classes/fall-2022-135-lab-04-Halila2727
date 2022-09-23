@@ -24,16 +24,13 @@ std::string checkerboard3x3(int width, int height)
         {
             s += current_char;
 
-            if(j % 3 == 0)
+            if(j%3 == 0 && current_char == "*")
             {
-                if(current_char == "*")
-                {
-                    current_char = " ";
-                }
-                else
-                {
-                    current_char = "*";
-                }
+                current_char = " ";
+            }
+            else if(j%3 == 0 && current_char == " ")
+            {
+                current_char = "*";
             }
         }
         s += "\n";
