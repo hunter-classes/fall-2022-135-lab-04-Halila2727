@@ -10,6 +10,7 @@
 #include <string>
 #include "box.h"
 #include "checkerboard.h"
+#include "cross.h"
 
 int main()
 {
@@ -43,6 +44,20 @@ int main()
     std::cout << result << "\n";
 
     std::cout << "\nEnd of Task B\n------------------\n\n";
+
+    std::cout << "\nTesting cross() function:\n\nSize: 8\n";
+    result = cross(8);
+    std::cout << result << "\n";
+    std::cout << "\n------------------\n";
+    std::cout << "\nSize: 0\n";
+    result = cross(0);
+    std::cout << result << "\n";
+    std::cout << "\n------------------\n";
+    std::cout << "\nSize: 13\n";
+    result = cross(13);
+    std::cout << result << "\n";
+
+    std::cout << "\nEnd of Task C\n------------------\n\n";
 
     
     return 0;
